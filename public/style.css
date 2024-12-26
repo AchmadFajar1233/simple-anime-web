@@ -1,0 +1,58 @@
+main{
+    padding: 2rem 5rem;
+    min-height: 75vh;
+}
+main h1{
+    margin-bottom: 2rem;
+}
+.main__container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.main__container-anime{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+img{
+    border-radius: 10px;
+}
+
+.anime-info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.anime-info h3{
+    margin-bottom: 1rem;
+}
+.main__container a{
+    text-decoration: none;
+}
+.container{
+    max-width: 15rem;
+}
+.container__card{
+    max-width: 100%;
+    height: 20rem;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    background-position: center;
+    background-size: cover;
+}
+.card__info{
+    margin: 1rem 0 2rem 0;
+}
+.card__info h2{
+    font-size: 1.2rem;
+}

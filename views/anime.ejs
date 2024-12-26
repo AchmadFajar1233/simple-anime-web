@@ -1,0 +1,32 @@
+<%- include('partials/header.ejs') %>
+<main>
+    <div class="main__container-anime">
+        <div class="anime-poster">
+            <% if (locals.data) { %> 
+                <img src="<%= data.images.webp.large_image_url %>" alt="poster_anime">
+            </div>
+            <div class="anime-info">
+                <div>
+                    <h1><%= data.title%></h1>
+                </div>
+                <div class="anime-info__sinopsis">
+                    <h3>Sinopsis:</h3>
+                    <p><%= data.synopsis %></p>
+                </div>
+                <div class="anime-info__other-info">
+                    <p><span style="font-weight: bold;">Genres</span>: <% data.genres.forEach((dg) => { %> 
+                            <%= dg.name %>
+                        <%}) %> </p>
+                    <p><span style="font-weight: bold;">Rating</span>: <%= data.rating %></p>
+                    <p><span style="font-weight: bold;">English Title</span>: <%= data.title_english %></p>
+                    <p><span style="font-weight: bold;">Japanese Title</span>: <%= data.title_japanese %></p>
+                    <p><span style="font-weight: bold;">Season</span>: <%= data.season %></p>
+                    <p><span style="font-weight: bold;">Year</span>: <%= data.year %></p>
+                    <p><span style="font-weight: bold;">Episodes</span>: <%= data.episodes %></p>
+                </div>
+            </div>
+                <% } %>
+    </div>
+</main>
+
+<%- include('partials/footer.ejs') %>
