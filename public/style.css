@@ -20,6 +20,7 @@ main h1{
 }
 img{
     border-radius: 10px;
+    width: 20rem
 }
 
 .anime-info{
@@ -27,6 +28,9 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+.anime-info__sinopsis{
+    margin-bottom: 1rem;
 }
 .anime-info h3{
     margin-bottom: 1rem;

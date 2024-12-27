@@ -22,34 +22,17 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 4rem;
+    padding: 0 7rem 0 5rem;
     background-color: var(--color-header);
 }
 nav a{
     text-decoration: none;
     color: var(--color);
 }
-.nav__navigation form input{
-    background-color: #0b0b2e;
-    border: none;
-    padding: 0.5rem 1rem;
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--color);
-    font-size: 1rem;
-    border-radius: 10px;
-    margin-right: 4px;
-}
-.nav__navigation form input:focus{
-    outline: none;
-}
-.nav__navigation form button{
-    padding: 0.3rem 1rem;
-    border-radius: 10px;
-    background-color: var(--color-body);
-    color: var(--color);
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
+.nav__navigation{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
 }
 footer{
     background-color: var(--color-footer);

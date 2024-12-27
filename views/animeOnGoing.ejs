@@ -1,0 +1,20 @@
+<%- include('partials/header.ejs') %>
+<main>
+    <h1>On Going:</h1>
+        <div class="main__container">
+            <% data.forEach((d) => { %> 
+                <div class="container">
+                    <a href="anime/<%= d.mal_id %>" class="container__card" id="container__card" style="background: url('<%= d.images.jpg.image_url %>');">
+                    </a>
+                    <div class="card__info" id="card__info">
+                        <h2 style="margin-bottom: 4px;"><%= d.title %></h2>
+                        <p><%= d.score %></p>
+                        <p>genre: <% d.genres.forEach((dg) => { %>
+                            <%= dg.name  %>
+                            <% }) %></p>
+                    </div>
+                </div>
+                <% }) %>
+        </div>
+</main>
+<%- include('partials/footer.ejs') %>
