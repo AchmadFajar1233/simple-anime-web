@@ -57,9 +57,6 @@ app.get('/anime/:mal_id', async (req, res) => {
         console.log(err)
     }
 })
-app.get('/otherPage', (req, res) => {
-    res.render('page3.ejs')
-})
 app.listen(port, () => {
     console.log('server dijalankan di port ' + port)
 })
